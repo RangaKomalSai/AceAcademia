@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         "p-blue": "#4e46e5",
-        "dark-blue": "#423bc4",
+        "light-blue": "rgba(78, 70, 229, 0.2)",
+        "dark-blue": "#4c0bce",
       },
       fontFamily: {
         "josefin-sans": ["Josefin Sans", "san-serif"],

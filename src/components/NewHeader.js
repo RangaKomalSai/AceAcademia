@@ -3,17 +3,17 @@ import { Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 import Logo from "./Logo";
 
-function Navbar() {
+function NewHeader() {
   const location = useLocation();
   return (
-    <div className="shadow-md bg-white">
-      <nav className="navbar flex justify-center items-end px-5 h-14">
+    <div className="shadow-md">
+      <nav className="navbar flex justify-center items-end px-5 h-14 bg-p-blue">
         <Logo />
         <ul className="flex justify-center gap-6 grow px-20">
           <li
-            className={`px-4 py-2 font-semibold font-poppins hover:text-p-blue  ${
+            className={`px-4 py-2 font-semibold font-poppins hover:text-white  ${
               location.pathname === "/home"
-                ? "text-p-blue border-solid border-b-2 border-p-blue rounded-t-md"
+                ? "text-white border-solid border-b-2 border-white rounded-t-md"
                 : ""
             }`}
           >
@@ -22,9 +22,9 @@ function Navbar() {
             </Link>
           </li>
           <li
-            className={`px-4 py-2 font-semibold font-poppins hover:text-p-blue ${
+            className={`px-4 py-2 font-semibold font-poppins hover:text-white ${
               location.pathname === "/courses"
-                ? "text-p-blue border-solid border-b-2 border-p-blue rounded-t-md"
+                ? "text-white border-solid border-b-2 border-white rounded-t-md"
                 : ""
             }`}
           >
@@ -33,9 +33,9 @@ function Navbar() {
             </Link>
           </li>
           <li
-            className={`px-4 py-2 font-semibold font-poppins hover:text-p-blue ${
+            className={`px-4 py-2 font-semibold font-poppins hover:text-white ${
               location.pathname === "/about"
-                ? "text-p-blue border-solid border-b-2 border-p-blue rounded-t-md"
+                ? "text-white border-solid border-b-2 border-white rounded-t-md"
                 : ""
             }`}
           >
@@ -44,9 +44,9 @@ function Navbar() {
             </Link>
           </li>
           <li
-            className={`px-4 py-2 font-semibold font-poppins hover:text-p-blue ${
+            className={`px-4 py-2 font-semibold font-poppins hover:text-white ${
               location.pathname === "/contact"
-                ? "text-p-blue border-solid border-b-2 border-p-blue rounded-t-md"
+                ? "text-white border-solid border-b-2 border-white rounded-t-md"
                 : ""
             }`}
           >
@@ -57,14 +57,18 @@ function Navbar() {
         </ul>
         <Link
           to="/home"
-          className="flex flex-nowrap items-center h-full text-p-blue font-semibold px-2"
+          className="flex flex-nowrap items-center h-full text-white font-semibold px-2"
         >
           Sign up
         </Link>
-        <Button text="Log in" path="/home" />
+        {/* <Button text="Log in" path="/home" />
+         */}
+        <button className="py-1 px-3 my-3 font-bold border border-white text-white hover:bg-white hover:text-p-blue hover:border-transparent rounded transition duration-300">
+          Log in
+        </button>
       </nav>
     </div>
   );
 }
 
-export default Navbar;
+export default NewHeader;
