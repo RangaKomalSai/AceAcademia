@@ -6,10 +6,12 @@ import Logo from "./Logo";
 function Navbar() {
   const location = useLocation();
   return (
-    <div className="shadow-md bg-white">
-      <nav className="navbar flex justify-center items-end px-5 h-14">
-        <Logo />
-        <ul className="flex justify-center gap-6 grow px-20">
+    <div className="shadow-md bg-white max-w-full h-full">
+      <nav className="flex justify-center items-end px-5 h-full">
+        <div className="flex justify-center h-full">
+          <Logo />
+        </div>
+        <ul className="flex justify-center lg:gap-6 md:grow">
           <li
             className={`px-4 py-2 font-semibold font-poppins hover:text-p-blue  ${
               location.pathname === "/home"
