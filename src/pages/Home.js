@@ -7,7 +7,7 @@ import Newsletter from "../components/Newsletter";
 function Home() {
   return (
     <div className="">
-      <div className=" px-10 py-5">
+      <div className=" px-10 py-5 min-h-screen">
         <HomeContent1 />
       </div>
       <div>
