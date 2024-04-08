@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
@@ -15,6 +14,10 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <PageNotFound />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/home",
         element: <Home />,

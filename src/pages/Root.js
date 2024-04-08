@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function Root() {
   return (
-    <>
+    <div className="flex flex-col">
       <div className="h-16">
         <Navbar />
       </div>
@@ -13,7 +13,7 @@ function Root() {
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

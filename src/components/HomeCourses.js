@@ -36,7 +36,7 @@ function HomeCourses() {
           Explore various courses offered by us and upskill yourself
         </p>
       </div>
-      <div className="flex justify-around px-10 py-10">
+      <div className="flex flex-wrap justify-around px-10 py-10">
         {courses.map((course) => (
           <CourseCard key={course.heading} {...course} />
         ))}

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className=" h-80 bg-light-blue shadow-xl w-full py-10 px-32 flex flex-col justify-between">
-      <div className="flex justify-between items-start gap-20">
-        <div className="flex flex-col grow">
+    <div className="min-h-80 bg-light-blue shadow-xl py-10 flex flex-col justify-between">
+      <div className="flex justify-around items-start flex-wrap">
+        <div className="flex flex-col px-2 py-5">
           <Logo className="py-10" />
           <div className="flex gap-2 py-2 mt-3">
             <i class="fi fi-sr-phone-flip"></i>
@@ -23,7 +23,7 @@ function Footer() {
             <p className="hover:underline cursor-pointer">Mumbai, Maharastra</p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-2 py-5">
           <p className="font-bold">Follow Us</p>
           <div className="flex text-3xl justify-around items-center gap-4 text-gray-700">
             <Link to="/socialmedia">
@@ -40,7 +40,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col  gap-4">
+        <div className="flex flex-col  gap-4 px-2 py-5">
           <p className="font-bold">Useful Links</p>
           <Link to="/home" className="hover:underline">
             Home

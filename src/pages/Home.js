@@ -3,7 +3,7 @@ import HomeContent1 from "../components/HomeContent1";
 import HomeContent2 from "../components/HomeContent2";
 import HomeBenefits from "../components/HomeBenefits";
 import HomeCourses from "../components/HomeCourses";
-
+import Newsletter from "../components/Newsletter";
 function Home() {
   return (
     <div className="">
@@ -17,6 +17,7 @@ function Home() {
         <HomeContent2 />
       </div>
       <HomeBenefits />
+      <Newsletter />
     </div>
   );
 }
