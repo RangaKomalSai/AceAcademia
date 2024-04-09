@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
@@ -7,6 +6,7 @@ import Courses from "./pages/Courses";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
+import SocialMedia from "./pages/SocialMedia";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <PageNotFound />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/home",
         element: <Home />,
@@ -31,6 +35,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
     ],
+  },
+  {
+    path: "/socialmedia",
+    element: <SocialMedia />,
   },
   {
     path: "/*",
