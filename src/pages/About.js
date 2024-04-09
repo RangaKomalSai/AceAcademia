@@ -1,7 +1,11 @@
 import React from "react";
 import AboutCard from "../components/AboutCard";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const achievements = [
     {
       icon: "fi fi-sr-chess-queen",

@@ -9,8 +9,12 @@ import c6 from "../images/courses/c6.png";
 import c7 from "../images/courses/c7.png";
 import c8 from "../images/courses/c8.png";
 import c9 from "../images/courses/c9.png";
+import { useEffect } from "react";
 
 function Courses() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const curriculum = [
     {
       heading: "Web Design Fundamentals",
@@ -55,7 +59,7 @@ function Courses() {
   return (
     <div className="px-20 py-10">
       <div className="flex flex-col items-center mb-3">
-        <h1 className="font-bold text-5xl text-balance w-full my-2">
+        <h1 className="font-bold text-5xl text-balance w-full mt-2 mb-10">
           Online Courses on <span className="text-s-orange">Design</span> and{" "}
           <span className="text-s-orange">Development</span>
         </h1>
@@ -67,7 +71,7 @@ function Courses() {
           fit for your learning journey.
         </p>
       </div>
-      <div className="h-0.5 bg-gray-200"></div>
+      <div className="h-0.5 bg-gray-200 my-10"></div>
       <div className="mt-3 flex flex-col gap-3 mb-10">
         {curriculum.map((curr) => (
           <CourseDetailCard {...curr} />
