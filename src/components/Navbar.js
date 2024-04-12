@@ -58,12 +58,12 @@ function Navbar() {
           </li>
         </ul>
         <Link
-          to="/home"
+          to="/login"
           className="flex flex-nowrap items-center h-full text-p-blue font-semibold px-2"
         >
           Sign up
         </Link>
-        <Button text="Log in" path="/home" />
+        <Button text="Log in" path="/login" />
       </nav>
     </div>
   );

@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import SocialMedia from "./pages/SocialMedia";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/*",
     element: <PageNotFound />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 function App() {

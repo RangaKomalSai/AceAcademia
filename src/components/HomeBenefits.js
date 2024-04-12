@@ -44,7 +44,8 @@ function HomeBenefits() {
     <div className="flex flex-col px-10 py-10 items-center">
       <h1 className="font-bold text-3xl">Benefits</h1>
       <p className="text-gray-600">Discover the Advantages of Our Services</p>
-      <div className="flex flex-wrap items-center justify-center my-3">
+      {/* <div className="flex flex-wrap items-center justify-center my-3"> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center my-3">
         {benefits.map((benefit) => (
           <BenefitCard key={benefit.number} {...benefit} />
         ))}

@@ -1,7 +1,11 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="flex gap-5 m-10">
       <div className="flex flex-col items-center justify-center grow">
